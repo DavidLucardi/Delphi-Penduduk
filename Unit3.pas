@@ -1,0 +1,55 @@
+unit Unit3;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DBGridEhGrouping, ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh,
+  StdCtrls, Buttons, sBitBtn, GridsEh, DBAxisGridsEh, DBGridEh, ExtCtrls,
+  sPanel, sLabel, DB, ADODB;
+
+type
+  TForm3 = class(TForm)
+    sPanel1: TsPanel;
+    sLabel2: TsLabel;
+    sLabel3: TsLabel;
+    sLabel4: TsLabel;
+    sLabel5: TsLabel;
+    DBGridEh1: TDBGridEh;
+    sPanel2: TsPanel;
+    sBitBtn2: TsBitBtn;
+    ADOQuery1: TADOQuery;
+    ADOConnection1: TADOConnection;
+    DataSource1: TDataSource;
+    ADOQuery1NoUrut: TWideStringField;
+    ADOQuery1NoPenduduk: TWideStringField;
+    ADOQuery1NoKartuKeluarga: TWideStringField;
+    ADOQuery1NamaLengkap: TWideStringField;
+    ADOQuery1TempatLahir: TWideStringField;
+    ADOQuery1TanggalLahir: TWideStringField;
+    ADOQuery1Jeniskelamin: TWideStringField;
+    ADOQuery1HubunganKeluarga: TWideStringField;
+    ADOQuery1RT: TWideStringField;
+    ADOQuery1RW: TWideStringField;
+    sLabel1: TsLabel;
+    procedure sBitBtn2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm3.sBitBtn2Click(Sender: TObject);
+begin
+Form3.Close;
+end;
+
+end.
+ 
